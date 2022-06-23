@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula [
+    <!ELEMENT pelicula (titulo,estreno,director,reparto)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT estreno (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT reparto (#PCDATA)>
+]>
+
+<pelicula>
+    <titulo>Interstellar</titulo>
+    <estreno>2014</estreno>
+    <director>Cristopher Nolan</director>
+    <reparto>Matthew McConaughey, Anne Hathaway, Mackenzie Foy, Jessica Chastain</reparto>
+</pelicula>

@@ -1,0 +1,20 @@
+lista_compra{
+    display: table;
+    border: 2px solid black;
+    margin: 30px;
+}
+marca{
+    color: green;
+    display: table-cell;
+    border-bottom: black 1px dotted;
+    padding: 20px;
+}
+nombre {
+    font-weight: bold;
+    display: table-cell;
+    border-bottom: black 1px dotted;
+    padding: 20px;
+}
+compra{
+    display: table-row;
+}

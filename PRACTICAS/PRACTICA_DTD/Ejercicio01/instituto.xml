@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto SYSTEM "instituto.dtd">
+<instituto>
+    <lista_profesores>
+        <profesor nrp="p-1">
+            <!-- Esto va a ser un ID-->
+            <nombre>Pepe</nombre>
+            <apellido1>Moro</apellido1>
+            <apellido2>Ceballos</apellido2> <!-- Este es opcional-->
+        </profesor>
+        <profesor nrp="p-2">
+            <!-- Esto va a ser un ID-->
+            <nombre>Antonio</nombre>
+            <apellido1>Manuel</apellido1>
+            <apellido2>González</apellido2> <!-- Este es opcional-->
+        </profesor>
+        <profesor nrp="p-3">
+            <!-- Esto va a ser un ID-->
+            <nombre>Alfonso</nombre>
+            <apellido1>Navajas</apellido1>
+        </profesor>
+    </lista_profesores>
+    <lista_asignaturas>
+        <asignatura codigo="as-1" profesor="p-1">
+            <!-- El atributo profesor es un IDREF a nrp de profesor-->
+            <nombre>Francés</nombre>
+        </asignatura>
+        <asignatura codigo="as-2" profesor="p-2">
+            <!-- El atributo profesor es un IDREF a nrp de profesor-->
+            <nombre>Inglés</nombre>
+        </asignatura>
+        <asignatura codigo="as-3" profesor="p-3">
+            <!-- El atributo profesor es un IDREF a nrp de profesor-->
+            <nombre>Bases de Datos</nombre>
+        </asignatura>
+    </lista_asignaturas>
+    <lista_cursos>
+        <lista_alumnos>
+            <alumno dni="DNI-50011456H">
+                <nombre>Álvaro</nombre>
+                <apellido1>Limón</apellido1>
+                <asignaturas en_curso="as-1 as-3">Francés</asignaturas><!-- El atributo en_curso es de tipo IDREFS-->
+            </alumno>
+            <alumno dni="DNI-33011296K">
+                <nombre>Daniel</nombre>
+                <apellido1>Arévalo</apellido1>
+                <apellido2>Miguelañez</apellido2> <!-- Opcional-->
+                <asignaturas en_curso="as-2 as-3">Inglés</asignaturas><!-- El atributo en_curso es de tipo IDREFS-->
+            </alumno>
+            <alumno dni="DNI-23681746L">
+                <nombre>Carlos</nombre>
+                <apellido1>González</apellido1>
+                <apellido2>Pérez</apellido2> <!-- Opcional-->
+                <asignaturas en_curso="as-1 as-2 as-3" ></asignaturas> <!-- El atributo en_curso es de tipo IDREFS-->
+            </alumno>
+        </lista_alumnos>
+
+    </lista_cursos>
+</instituto>

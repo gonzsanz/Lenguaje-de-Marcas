@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="accomodations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="rental">
+                    <!-- Puede repetirse más de una vez-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice maxOccurs="unbounded">
+                                <!-- Se utiliza choice para que puedan repetrise y aparecer en el orden que sea -->
+                                <xs:element name="title" type="xs:string" />
+                                <xs:element name="description" type="xs:string" />
+                                <xs:element name="sleeps" type="xs:integer" />
+                                <xs:element name="lodging">
+                                    <xs:complexType>
+                                        <xs:simpleContent>
+                                            <xs:extension base="xs:integer">
+                                                <xs:attribute name="currency" type="xs:string" use="required" />
+                                                <!-- El atributo es requerido ya que no tiene sentido no poner un precio de alquiler -->
+                                            </xs:extension>
+                                        </xs:simpleContent>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="deposit">
+                                    <xs:complexType>
+                                        <xs:simpleContent>
+                                            <xs:extension base="xs:integer">
+                                                <xs:attribute name="currency" type="xs:string" use="required" />
+                                            </xs:extension>
+                                        </xs:simpleContent>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element maxOccurs="unbounded" name="facility">
+                                    <xs:complexType>
+                                        <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                                <xs:attribute name="usage" type="xs:string" use="optional" />
+                                            </xs:extension>
+                                        </xs:simpleContent>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="type" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <!-- Solo puede haber estos tres tipos de casas-->
+                                    <xs:enumeration value="house"></xs:enumeration>
+                                    <xs:enumeration value="apartment"></xs:enumeration>
+                                    <xs:enumeration value="guesthouse"></xs:enumeration>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="accomodation">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string" />
+                            <xs:element name="description" type="xs:string" />
+                            <xs:element maxOccurs="unbounded" name="room"> <!-- Es unbouned ya que puede tener mas de una habitación -->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string" />
+                                        <xs:element maxOccurs="unbounded" name="sleeps">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="guest" type="xs:string" use="optional" /> <!-- Es opcional porque puede no haber camas de invitados-->
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="lodging">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="currency" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="deposit">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="currency" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="type" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,71 @@
+body {
+    font-family:arial;
+}
+h1 {
+    color:#333;
+    font-size:20px;
+} 
+table, td, th {
+    border:1px solid #ccc;
+} 
+td, th { 
+    padding:8px; color:#333;
+}
+table {
+    border-collapse:collapse;
+} 
+caption {
+  font-style: italic;
+  font-size: 150%;
+  font-weight: bold;
+  color:cadetblue;
+}
+/* La mayoría de las celdas están alineadas al centro */
+td {
+  text-align: center;
+}
+/* algunas celdas estánn alineadas a la izquierda */
+/* el uso de la propiedad clase en CSS se inicia con un punto */
+.izq{
+  text-align:left;
+}
+.encabezado{
+  height: 40px;
+}
+.barra{
+  height: 25px;
+}
+.blanco{
+  background-color:white;
+}
+.negrita{
+  font-weight: bold;
+}
+.normal{
+  font-weight: normal;
+}
+.descanso { color:#333;}
+
+/* Uso la propiedad clase para poner color a cada actividad */
+.ceramica { 
+background-color: limegreen;
+}
+.yoga {
+background-color: yellow;
+}
+.pintura { 
+background-color: orange;
+}
+.teatro {
+  background-color: rosybrown;
+}
+.mesa {
+background-color: darkkhaki;
+}
+.coordinacion {
+background-color: pink;
+height: 60px;
+}
+.natacion {
+background-color: skyblue;
+}

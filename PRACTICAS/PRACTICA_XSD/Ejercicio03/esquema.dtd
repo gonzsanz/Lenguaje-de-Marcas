@@ -1,0 +1,17 @@
+
+<!ELEMENT informe_seguridad (terrorista+,organizacion+) > 
+<!ELEMENT terrorista ((nombre,tipo?,estado?) |                        
+                      (nombre,estado?,tipo?) | 
+                      (tipo?,nombre,estado?) |  
+                      (tipo?,estado?,nombre) |  
+                      (estado?,tipo?,nombre) | 
+                      (estado?,nombre,tipo?))> 
+<!ATTLIST terrorista id ID #REQUIRED pais NMTOKENS #IMPLIED edad NMTOKEN #IMPLIED > 
+<!ELEMENT nombre (#PCDATA) > 
+<!ELEMENT tipo (#PCDATA) > 
+<!ELEMENT estado EMPTY > 
+<!ATTLIST estado estado (vivo|muerto|capturado) #IMPLIED > 
+<!ELEMENT organizacion ((nombre,anyo,region+) | (anyo,nombre,region+)) > 
+<!ATTLIST organizacion miembros IDREFS #IMPLIED> 
+<!ELEMENT anyo (#PCDATA)> 
+<!ELEMENT region (#PCDATA)> 

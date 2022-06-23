@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="1 DAW" description="Clase daw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="grupos.xsd">
+    <person>Pedro</person>
+    <person>Juan</person>
+    <person>David</person>
+    <person>Jorge</person>
+    <person>Julio</person>
+</group>

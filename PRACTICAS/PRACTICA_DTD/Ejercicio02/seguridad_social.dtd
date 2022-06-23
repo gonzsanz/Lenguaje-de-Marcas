@@ -1,0 +1,19 @@
+<!ELEMENT lista_afiliados (afiliado*)>
+    <!ELEMENT afiliado (dni, nombre, apellidos, fecha_nac, listado_bajas, listado_presentaciones)>
+        <!ATTLIST afiliado situacion_laboral (en_paro|en_activo|jubilado|edad_no_laboral) #REQUIRED>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT situacion_laboral (#PCDATA)>
+    <!ELEMENT fecha_nac (dia, mes, anio)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT listado_bajas (baja*)>
+    <!ELEMENT baja (causa, fecha_inicio, fecha_final?)>
+    <!ELEMENT causa (#PCDATA)>
+    <!ELEMENT fecha_inicio (#PCDATA)>
+    <!ELEMENT fecha_final (#PCDATA)>
+    <!ELEMENT listado_presentaciones (prestacion*)>
+    <!ELEMENT prestacion (cantidad_percibida, fecha_inicio, fecha_final)>
+    <!ELEMENT cantidad_percibida (#PCDATA)>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+    <pais continente="Europa">
+        <nombre moneda="euro">Bélgica</nombre>
+        <idioma>Neerlandés</idioma>
+        <idioma>Francés</idioma>
+        <idioma>Alemán</idioma>
+        <superficie>30528</superficie>
+        <densidad_poblacion>372.06</densidad_poblacion>
+    </pais>
+    <pais continente="América">
+        <nombre moneda="dolar">EEUU</nombre>
+        <idioma>Inglés</idioma>
+        <superficie>9147593</superficie>
+        <densidad_poblacion>32.8</densidad_poblacion>
+    </pais>
+    <pais continente="África">
+        <nombre moneda="dirham">Marruecos</nombre>
+        <idioma>Árabe</idioma>
+        <idioma>Bereber</idioma>
+        <superficie>446550</superficie>
+        <densidad_poblacion>73.1</densidad_poblacion>
+    </pais>
+    <pais continente="América">
+        <nombre moneda="real">Brasil</nombre>
+        <idioma>Portugués</idioma>
+        <superficie>8515770</superficie>
+        <densidad_poblacion>24.92</densidad_poblacion>
+    </pais>
+    <pais continente="Europa">
+        <nombre moneda="euro">España</nombre>
+        <idioma>Castellano</idioma>
+        <idioma>Gallego</idioma>
+        <idioma>Euskera</idioma>
+        <idioma>Catalán</idioma>
+        <idioma>Aranés</idioma>
+        <superficie>505944</superficie>
+        <densidad_poblacion>93.55</densidad_poblacion>
+    </pais>
+</paises> 

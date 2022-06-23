@@ -1,0 +1,22 @@
+.caja{
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin: 0px;
+	width: 48px;
+}
+
+#caja1{
+	background-color: red;
+}
+
+#caja2{
+	background-color: green;
+}
+
+#caja3{
+	background-color: blue;
+}

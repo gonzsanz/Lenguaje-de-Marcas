@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio01.css" type="text/css"?>
+<lista_compra>
+    <compra seccion="Deportes">
+        <nombre>Bicicleta</nombre>
+        <marca>BH</marca>
+    </compra>
+    <compra seccion="Menaje">
+        <nombre>Cafetera</nombre>
+        <marca>Magefesa</marca>
+    </compra>
+    <compra seccion="Alimentación">
+        <nombre>Café</nombre>
+        <marca>Marcilla</marca>
+    </compra>
+    <compra seccion="Alimentación">
+        <nombre>Aceitunas</nombre>
+        <marca></marca>
+    </compra>
+</lista_compra>

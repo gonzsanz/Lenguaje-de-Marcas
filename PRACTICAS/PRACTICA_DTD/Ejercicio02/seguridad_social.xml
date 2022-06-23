@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lista_afiliados SYSTEM "seguridad_social.dtd">
+
+<lista_afiliados>
+    <afiliado situacion_laboral="edad_no_laboral">  <!-- en paro, en activo, jubilado, edad no laboral -->
+        <dni>11655543T</dni>
+        <nombre>Alfredo</nombre>
+        <apellidos>Duro Rodrígez</apellidos>
+        <fecha_nac>
+            <!-- Obligatorio-->
+            <dia>31</dia>
+            <mes>05</mes>
+            <anio>1978</anio>
+        </fecha_nac>
+        <listado_bajas>
+            <!-- Puede haber 0 o más-->
+            <baja>
+                <causa>Lesión dedo meñique de la mano</causa> <!-- Obligatorio-->
+                <fecha_inicio>17-05-2013</fecha_inicio> <!-- Obligatorio-->
+                <fecha_final>26-05-2013</fecha_final> <!-- Opcional-->
+            </baja>
+        </listado_bajas>
+        <listado_presentaciones>
+            <prestacion>
+                <!-- Puede haber 0 o más-->
+                <cantidad_percibida>267€</cantidad_percibida> <!-- Obligatorio -->
+                <fecha_inicio>20-05-2013</fecha_inicio> <!-- Obligatorio-->
+                <fecha_final>27-05-2013</fecha_final> <!-- Obligatorio-->
+            </prestacion>
+        </listado_presentaciones>
+    </afiliado>
+</lista_afiliados>

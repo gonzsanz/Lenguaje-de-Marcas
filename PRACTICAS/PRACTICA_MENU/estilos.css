@@ -1,0 +1,26 @@
+h1 {
+    font-style:italic
+}
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:dimgrey;
+}
+legend {
+    text-align: center;
+}
+::placeholder{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    text-align: center;
+    background-image: url(imagenes/fondo.jpg);
+}
+label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    margin-left: 350px;
+}

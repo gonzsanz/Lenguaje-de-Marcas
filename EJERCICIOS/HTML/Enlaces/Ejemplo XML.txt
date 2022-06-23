@@ -1,0 +1,10 @@
+<persona>
+   <persona>
+	<nombre>David</nombre>
+	<apellidos>Gonzalez Sanz</apellidos>
+   </persona>
+   <persona>
+	<nombre>Carlos</nombre>
+	<apellidos>Gonzalez Perez</apellidos>
+   </persona>
+</persona>

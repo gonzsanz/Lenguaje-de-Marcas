@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Menú</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>MENÚ</h1></legend>
+            <fieldset>
+                <legend><h2>Entrantes</h2></legend> <!--ENTRANTES-->
+                <p>
+                    <input id="croquetas" type="checkbox" name="croquetas"/><label for="croquetas">Croquetas</label>
+                </p>
+                <p>
+                    <input id="bravas" type="checkbox" name="bravas"/><label for="bravas">Patatas Bravas</label>
+                </p>
+                <p>
+                    <input id="embutido" type="checkbox" name="embutido"/><label for="embutido">Embutido</label>
+                </p>
+                <p>
+                    <input id="mollejas" type="checkbox" name="mollejas"/><label for="mollejas">Mollejas de cerdo</label>
+                </p>
+                <p>
+                    Elija que tipo de ración quiere:<br>
+                    <input type="radio" name="entrante" value="media" id="media entrante"/><label for="media entrante">Media</label>
+                    <input type="radio" name="entrante" value="entera" id="entera entrante"/><label for="entera entrante">Entera</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Primeros</h2></legend>  <!--PRIMEROS-->
+                <p>
+                    <input id="sopa" type="checkbox" name="sopa"/><label for="sopa">Sopa castellana</label>
+                </p>
+                <p>
+                    <input id="boloñesa" type="checkbox" name="boloñesa"/><label for="boloñesa">Espaguetis boloñesa</label>
+                </p>
+                <p>
+                    <input id="paella" type="checkbox" name="paella"/><label for="paella">Paella</label>
+                </p>
+                <p>
+                    <p>
+                        Elija que tipo de ración quiere:<br>
+                        <input type="radio" name="primero" value="media" id="media primero"/><label for="media primero">Media</label>
+                        <input type="radio" name="primero" value="entera" id="entera primero"/><label for="entera primero">Entera</label>
+                    </p>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Segundos</h2></legend>  <!--SEGUNDOS-->
+                <p>
+                    <input id="solomillo" type="checkbox" name="solomillo"/><label for="solomillo">Solomillo de cerdo</label>
+                </p>
+                <p>
+                    <input id="entrecot" type="checkbox" name="entrecot"/><label for="entrecot">Entrecot de ternera</label>
+                </p>
+                <p>
+                    <input id="lubina" type="checkbox" name="lubina"/><label for="lubina">Lubina a la plancha</label>
+                </p>
+                <p>
+                    <input id="escalope" type="checkbox" name="escalope"/><label for="escalope">Escalope de pollo</label>
+                </p>
+                <p>
+                    Elija que tipo de ración quiere:<br>
+                    <input type="radio" name="segundo" value="media" id="media segundo"/><label for="media segundo">Media</label>
+                    <input type="radio" name="segundo" value="entera" id="entera segundo"/><label for="entera segundo">Entera</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Postres</h2></legend>  <!--POSTRES-->
+                <p>
+                    <input id="flan" type="checkbox" name="flan"/><label for="flan">Flan con nata</label>
+                </p>
+                <p>
+                    <input id="contesa" type="checkbox" name="contesa"/><label for="contesa">Contesa</label>
+                </p>
+                <p>
+                    <input id="helado" type="checkbox" name="helado"/><label for="helado">Tarrina de helado</label>
+                </p>
+                <p>
+                    <input id="arroz" type="checkbox" name="arroz"/><label for="arroz">Arroz con leche</label>
+                </p>
+            </fieldset>
+            <h3>Datos para la entrega del pedido</h3>  <!--ENTREGA-->
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" name="nombre"/>
+            </p>
+            <p>
+                <label for="direccion">Dirección: </label>
+                <input id="direccion" type="text" name="direccion"/>
+            </p>
+            <p>
+                <label for="telefono">Teléfono: </label>
+                <input id="telefono" type="tel" name="telefono" maxlength="9"/>
+            </p>
+            <p>
+                Observaciones: <br>
+                <textarea name="texto" rows="12" cols="40" placeholder="Indiquenos alguna observación más si es necesario"></textarea>
+            </p>
+            <p>
+                Porfavor selecione un método de pago:  <!--METODO DE PAAGO-->
+                <select name="menu">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="bizum">Bizum</option>
+                </select>
+            </p>
+            <input type="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>

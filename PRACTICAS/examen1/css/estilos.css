@@ -1,0 +1,129 @@
+/* indicador de fuente */
+@font-face {
+    font-family: 'Winter';
+    src: url(../fonts/winter.woff);
+}
+
+
+h1{
+    font-family: 'Winter';
+    /*
+    familia winter
+    ruta al fichero woff
+    */
+}
+
+/* toda la pagina */
+body{
+    width: 80%;
+    min-width: 560px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*
+    ancho 80%
+    anchura mínima 560px
+    margen automático (para que quede centrada)
+    familia de la fuente 'Lucida Grande', 'Lucida Sans Unicode', sans-serif
+    */
+}
+
+/* encabezados de primer nivel */
+h1{
+    font-size: 2em;
+    text-align: center;
+    clear: left;
+    font-family: 'Winter';
+    /*
+    famila de la fuente winter
+    tamaño de la fuente 2em
+    alineación del texto centrado
+    clear izquierdo
+    */
+}
+
+/* capa con imagen*/
+#banner{
+    background-image: url(../img/banner.png);
+    border: 2px solid firebrick;
+    height: 80px;
+    box-shadow: 1px 1px 80px firebrick;
+    /*
+    imagen de fondo banner.png
+    borde de 2px sólido, de color firebick
+    altura de 80px
+    sombra de la caja con un desplazamiento horizontal de 1px, un desplazamiento vertical de 1px y 80px de ancho de degradado de color firebrick
+    */
+}
+
+/* clase menu */
+.menu{
+    margin: 10px;
+    /* margen de 10px */
+}
+
+/* divisores contenidos en elemento con clase menu */
+.menu div{
+    float: left;
+    background-color: firebrick;
+    padding: 6px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    /*
+    floado a la izquierda
+    color de fondo firebrick
+    relleno de 6px
+    transformación de texto uppercase
+    margen derecho 4px
+    */
+}
+
+/* divisores contenidos en elemento con clase menu cuando se pasa por encima de ellos*/
+.menu div:hover{
+    background-color: #d4281a;
+    /*
+    color de fondo  #d4281a;
+    */
+}
+
+/* enlaces contenidos en elemento de clase menu */
+.menu a{
+    text-decoration: none;
+    color: white;
+    /*
+    ninguna decoración del texto
+    color blanco
+    */
+}
+/* tabla */
+table{
+    width: 100%;
+    /* ancho del 100% */
+}
+
+/* tabla y td */
+table, td{
+    border: 2px solid firebrick;
+    border-radius: 5px;
+    text-align: center;
+    /*
+    borde de 2px sólido de color firebrick
+    borde con radio de 5px
+    alineación del texto centrado
+    */
+}
+
+/* pie de página */
+#pie{
+    background-color: firebrick;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    /*
+    fondo de color firebrick
+    texto color blanco
+    relleno de 5px
+    margen arriba 10px
+    texto centrado
+    */
+}

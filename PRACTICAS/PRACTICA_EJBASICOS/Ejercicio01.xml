@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <destinatario> Jon Snow. </destinatario>
+    <articulo>espada de acero valyrio. </articulo>
+    <dirección> el Castillo Negro</dirección>
+    <fecha_entrega> 08-01-2021</fecha_entrega>
+</pedido>
+  

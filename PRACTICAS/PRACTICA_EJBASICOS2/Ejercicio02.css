@@ -1,0 +1,29 @@
+deporte{
+    display: table;
+    border: 2px solid black;
+}
+equipo{
+    display: table-row;
+}
+jugador{
+    display: table-row;
+}
+
+nombre, ciudad, entrenador, nacionalidad{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+#barca{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+#madrid{
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+#barca>nombre, #barca entrenador, #barca nacionalidad {
+    background-color: blue;
+} 

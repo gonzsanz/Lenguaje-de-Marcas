@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        
+                        <xs:sequence>
+                            <xs:element name="titulo"></xs:element>
+                            <xs:element name="edicion" type="xs:integer" minOccurs="0"></xs:element>
+                            <xs:element name="autor" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="primer_nombre" type="xs:string"></xs:element>
+                                        <xs:element name="segundo_nombre" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="1"></xs:maxLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="apellido" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="fecha_publicacion">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="mes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minExclusive value="1"></xs:minExclusive>
+                                                    <xs:maxInclusive value="12"></xs:maxInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="dia">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minExclusive value="1"></xs:minExclusive>
+                                                    <xs:maxInclusive value="31"></xs:maxInclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="anyo" type="xs:int"></xs:element>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tipo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="nonfiction"></xs:enumeration>
+                                        <xs:enumeration value="fiction"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="precio" type="xs:decimal"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="isbn">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[I][0-9]{13}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="tipo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="P H"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+<!ELEMENT paises (pais*)>
+<!ELEMENT pais (nombre, habitantes?, extension?, gobierno, idiomas?)>
+    <!ATTLIST pais id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT habitantes (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+    <!ATTLIST extension unidad CDATA #FIXED "km2">
+<!ELEMENT gobierno (#PCDATA)>
+    <!ATTLIST gobierno tipo (republica_federal | republica_islamica | monarquia | dictadura) #REQUIRED>
+    <!ATTLIST gobierno fecha NMTOKEN #IMPLIED>
+<!ELEMENT idiomas (idioma*)>
+<!ELEMENT idioma (#PCDATA)>
+    <!ATTLIST idioma nombre CDATA #REQUIRED>

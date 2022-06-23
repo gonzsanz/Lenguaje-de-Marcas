@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hechos_historicos>
+    <hecho descripcion="IBM da a conocer el PC">
+        <fecha>
+            <dia>12</dia>
+            <mes>08</mes>
+            <año>1981</año>
+        </fecha>
+    </hecho>
+    <hecho descripcion="Deep Blue vence a Kasparov">
+        <fecha>
+            <dia>11</dia>
+            <mes>05</mes>
+            <año>1997</año>
+        </fecha>
+    </hecho>
+    <hecho descripcion="Marck Zuckerberg lanza Facebook">
+        <fecha>
+            <dia>04</dia>
+            <mes>02</mes>
+            <año>2004</año>
+        </fecha>
+    </hecho>
+</hechos_historicos>

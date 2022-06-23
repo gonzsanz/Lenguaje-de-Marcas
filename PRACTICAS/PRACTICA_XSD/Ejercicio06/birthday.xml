@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<birthdays xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="birthday.xsd">
+    <family>
+        <mother name="Pilar">
+            <date>1969-03-13</date>
+            <phone network="Vodafone" />
+        </mother>
+        <father name="Jesús">
+            <date>1963-05-14</date>
+            <phone network="ZON" />
+        </father>
+        <husband name="Miguel">
+            <date>1998-06-01</date>
+            <phone network="MEO" />
+        </husband>
+        <brother name="David">
+            <date>2002-05-30</date>
+            <phone network="Vodafone" />
+        </brother>
+    </family>
+    <friends>
+        <friend name="Álvaro">
+            <date>2002-02-05</date>
+            <phone network="ZON" />
+        </friend>
+    </friends>
+    <colleagues>
+        <colleague name="Juan Carlos">
+            <date>1968-09-08</date>
+            <phone network="MEO" />
+        </colleague>
+    </colleagues>
+</birthdays>

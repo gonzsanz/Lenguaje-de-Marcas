@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio02.css" type="text/css"?>
+<deporte>
+    <equipo id="barca">
+        <nombre>F.C Barcelona</nombre>
+        <ciudad>Barcelona</ciudad>
+        <entrenador>Xavi Hernández</entrenador>
+        <jugador posicion="Delantero">
+            <nombre>Ansu Fati</nombre>
+            <nacionalidad>Española</nacionalidad>
+        </jugador>
+        <jugador posicion="Portero">
+            <nombre>Ter Stegen</nombre>
+            <nacionalidad>Alemana</nacionalidad>
+        </jugador>
+    </equipo>
+    <equipo id="madrid">
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador>Carlo Ancelotti</entrenador>
+        <jugador posicion="Delantero">
+            <nombre>Vinicius Jr</nombre>
+            <nacionalidad>Brasileña</nacionalidad>
+        </jugador>
+        <jugador posicion="Defensa">
+            <nombre>Casemiro</nombre>
+            <nacionalidad>Brasileña</nacionalidad>
+        </jugador>
+    </equipo>
+</deporte>

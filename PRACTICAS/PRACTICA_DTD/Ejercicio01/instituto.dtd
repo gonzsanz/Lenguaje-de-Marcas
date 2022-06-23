@@ -1,0 +1,17 @@
+<!ELEMENT instituto (lista_profesores, lista_asignaturas, lista_cursos)>
+<!ELEMENT lista_profesores (profesor+)>
+<!ELEMENT profesor (nombre, apellido1, apellido2?)>
+    <!ATTLIST profesor nrp ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT lista_asignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre)>
+    <!ATTLIST asignatura codigo ID #REQUIRED>
+    <!ATTLIST asignatura profesor IDREF #REQUIRED>
+<!ELEMENT lista_cursos (lista_alumnos)>
+<!ELEMENT lista_alumnos (alumno+)>
+<!ELEMENT alumno (nombre, apellido1, apellido2?, asignaturas+)>
+    <!ATTLIST alumno dni ID #REQUIRED>
+<!ELEMENT asignaturas (#PCDATA)>
+    <!ATTLIST asignaturas en_curso IDREFS #REQUIRED>

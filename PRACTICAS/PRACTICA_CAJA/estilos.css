@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+}
+div{
+    width: 200px;
+    padding: 40px;
+    margin: 30px;
+    border-width: 10px;
+    background-color:lightgray;
+    border-style:solid;
+    border-color: blue;
+}

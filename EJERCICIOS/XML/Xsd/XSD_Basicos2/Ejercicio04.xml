@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jugadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio04.xsd">
+   <jugador numero="13">
+      <nombre>Marc Gasol</nombre>
+      <edad>36</edad>
+   </jugador>
+   <jugador numero="9">
+      <nombre>Ricky</nombre>
+      <edad>30</edad>
+   </jugador>
+</jugadores>

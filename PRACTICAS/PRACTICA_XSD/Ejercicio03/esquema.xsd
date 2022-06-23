@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="informe_seguridad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="terrorista" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="estado" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="estado" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="vivo"></xs:enumeration>
+                                                <xs:enumeration value="muerto"></xs:enumeration>
+                                                <xs:enumeration value="capturado"></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tipo" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID" use="required"/>
+                        <xs:attribute name="pais" type="xs:NMTOKENS" use="optional" />
+                        <xs:attribute name="edad" type="xs:NMTOKEN" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="organizacion" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="anyo" type="xs:integer" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="region" type="xs:string" maxOccurs="unbounded" />
+                        </xs:sequence>
+                        <xs:attribute name="miembros" type="xs:IDREFS" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
